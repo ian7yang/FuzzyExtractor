@@ -1,0 +1,22 @@
+{
+  "name": "fuzzy-extractor",
+  "version": "1.0.0",
+  "description": "A wasm build for fuzzy extractor",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build:web": "wasm-pack build --target web",
+    "build:node": "wasm-pack build --target nodejs",
+    "test:node": "wasm-pack test --node",
+    "test:web": "wasm-pack test --chrome"
+  },
+  "author": "ian7yang@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "npm-run-all": "^4.1.5",
+    "wasm-pack": "^0.10.3"
+  }
+}
